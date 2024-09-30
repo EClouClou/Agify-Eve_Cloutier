@@ -1,0 +1,19 @@
+button {
+    background-color: var(--terracotta);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border: 2px solid var(--terracotta);
+    text-align: center;
+    align-items: center;
+
+}
+
+i {
+    padding-right: 0.5rem;
+}
+
+button:hover {
+    box-shadow: var(--box-shadow);
+}
+

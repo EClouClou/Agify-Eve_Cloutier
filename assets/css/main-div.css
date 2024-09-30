@@ -1,0 +1,82 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1500px;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+.main-aside {
+    border-top: 2px solid var(--terracotta);
+    height: 100%;
+}
+
+.input-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: flex-start;
+        text-align: left;
+        margin: 0 auto;
+        padding: 0;
+        height: 100%;
+        text-align: left;
+    }
+
+    .main-div {
+        padding: 2rem;
+        grid-column: 1 / 2;
+    }
+
+    .input-btn {
+        justify-content: flex-start;
+    }
+
+    .main-aside  {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        border-left: 2px solid var(--terracotta);
+        padding: 0 2rem 0;
+        border-top: 0;
+    }
+
+    .history,
+    .no-history {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    main {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .main-div {
+        grid-column: 1 / 3;
+    }
+
+    .history
+    {
+        grid-column: 3 / 4;
+
+    }
+}
+
